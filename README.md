@@ -4,7 +4,7 @@ Spread the light ☀️
 ![Beschreibung des Bildes](images/strips_total.gif)
 
 ## Overview
-This is our meterized LED bar system. It is designed to be cheap, simple and modular
+This is our meterized LED bar system. It is designed to be cheap, simple and modular. 
 
 ![Beschreibung des Bildes](images/strips_total.jpeg)
 ![Beschreibung des Bildes](images/strips_ceiling.jpeg)
@@ -13,29 +13,23 @@ This is our meterized LED bar system. It is designed to be cheap, simple and mod
 
 ![Beschreibung des Bildes](images/LED_bar.jpeg)
 
-Simplicity is key. Each bar has 5 components. A aluminum bar, a diffuser, 3D printed end pieces, an LED strip and a short DMX cable on each side. This makes them relatively simple to build and maintain,controller independent and modular. Bars can be connected in line with standard DMX cables for maximal flexibility.
-Line length is limited by voltage drop and diminishing signal integrity over distance. 12 Strips in a line is a good limit for our setup. Results vary based on cable length.
-Each 1m LED Bar has 60 pixels - 
-
-
+Simplicity is key. Each bar has 5 components. A aluminum bar, a diffuser, 3D printed end pieces, an LED strip and a short DMX cable on each side. This makes them relatively simple to build and maintain. At the same time, they are controller independent and modular. Bars can be connected in line with standard DMX cables for maximal flexibility.
+Line length is limited by voltage drop and diminishing signal integrity over distance. 12 Strips in a line is a good limit for our setup. Results vary based on cable thickness and length.
+In our configuration, each 1m LED Bar has 60 pixels.
 
 
 ## Power & Controls
 ![Beschreibung des Bildes](images/controller_power.jpeg)    
 ### Power
-We use a 12V 380W power supplies, as they allow us to max out our controllers generation/translation capabilities for the connected pixels. Read more [here](https://kno.wled.ge/features/multi-strip/). 
-For the set-up in the pictures above we use one power supply and controller each to control 4 lines of LED bars.
-
+We use a 12V 380W power supplies, as they allow us use the maximum amount of pixles our controller can handle at full brightness. Read more [here](https://kno.wled.ge/features/multi-strip/). 
+For the set-up in the pictures above we use one power supply and controller each to control 4 lines of 4-8 LED bars.
 
 ![Beschreibung des Bildes](images/strips_total_wiring.jpeg)    
 
 ### Controls
 The LED Bars work with any method of controlling the underlying WS2815 LED strips. Our controller is based on a nodeMCU (WT32-ETH01), which utilized [WLED](https://kno.wled.ge) for generating Effects or translating [DMX/Art-Net](https://en.wikipedia.org/wiki/Art-Net) from other sources.
-
-
-
-We use a nodeMCU to connect the controller via ethernet. Power is supplied through a DC-DC Converter (12 -> 5V). 
-To increase reliability, signals are boosted using a logic level shifter, which ensures a 5V signal from the 3V signal source of the nodeMCU. 
+Our nodeMCU has an ethernet port for DMX/Art-Net and also supports wifi. Power is supplied through a DC-DC Converter (12 -> 5V). 
+To increase reliability, signals are boosted using a logic level shifter, which ensures a 5V signal from the 3V signal source of the nodeMCU. [WLED Docs](https://kno.wled.ge/basics/getting-started/)
 See here wiring diagram:
 
 ### Meownting
