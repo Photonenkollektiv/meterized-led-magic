@@ -8,6 +8,7 @@ This is our meterized LED bar system. It is designed to be cheap, simple and mod
 
 ![Beschreibung des Bildes](images/strips_total.jpeg)
 ![Beschreibung des Bildes](images/strips_ceiling.jpeg)
+Note: Make sure to glue the LED strips properly - we used superglue. Else you can see the individual pixels as seen in the back of the image.s
 
 ## LED Bars
 
@@ -46,16 +47,18 @@ Have fun mounting
 
 ## Requirements to build
 - 3D Printer
-- WS2815 LED Strips (we use 60LEDs/m)
-- Aluminium profiles with diffuser
+- Laptop/PC to flash 
+
+### Components
+- [WS2815 LED Strips (we use 60LED/m)](https://de.aliexpress.com/item/32961181562.html)
+- [Aluminium profiles with diffuser](https://www.amazon.de/gp/aw/d/B06XGBQC7X?psc=1&ref=ppx_pop_mob_b_asin_image)
 - M4x12 screws and nuts
-- threaded inserts
-- DMX Male and Female connectors
+- [threaded inserts](https://de.aliexpress.com/item/1005005771957030.html)
+- [DMX Male and Female connectors](https://de.aliexpress.com/item/1005005925090403.html)
 - 3 pronged wire 6mm outer dimater
 - glue 
   - to connect 3D printed parts to aluminum bars (we used epoxy)
   - to connect LED strips to aluminum bars (we used double sided gel tape)
-
 
 ## Manufacturing
 
@@ -69,6 +72,7 @@ Have fun mounting
 3. cut aluminum profiles and diffusers to desired length
 4. Epoxy printed parts to aluminum profile
 5. Wire up male & female DMX connectors to cables of preferred length
+   1. make sure that male connector goes to the controller
 6. Solder cables to LED Strips of correct length
    1. very short de-insulation required!
     ![cable length](images/soldering_led.png)
